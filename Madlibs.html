@@ -5,20 +5,38 @@
     </head>
     <body>
         <h1>Mad Libs</h1>
-        <div class="container">
+        <div id="form-container" class="container form-container">
             <form class="form">
-                Person Name: <input type="text" value="Mikey"><br><br>
-                Character: <input type="text" value="White Snow Princess"><br><br>
-                Adverb: <input type="text" value="quickly"><br><br>
-                Adjective: <input type="text" value="cute"><br><br>
+                <table class="form-table">
+                    <tr>
+                        <th>Person Name:</th>
+                        <th><input id="name-input" type="text" value="Mikey"></th>
+                    </tr>
+                    <tr>
+                        <th>Character:</th>
+                        <th><input id="character-input" type="text" value="White Snow Princess"></th>
+                    </tr>
+                    <tr>
+                        <th>Adverb:</th>
+                        <th><input id="adverb-input" type="text" value="quickly"></th>
+                    </tr>
+                    <tr>
+                        <th>Adjective:</th>
+                        <th><input id="adjective-input" type="text" value="cute"></th>
+                    </tr>
+                </table>
             </form>
             <br><br>
-            <button type="button" align="right">Tell Story</button>
+            <button type="button" onclick="updateStory()" align="right">Tell Story</button>
         </div>
-    </body>
-    <div>
         
-    </div>
+        <div id="story-container" class="container story-container">
+            <h2>Sarah's Crazy MadLibs Story</h2>
+           
+            <p>One day, my friend <span class="word name">Mikey</span> was visiting New York and ran into <span class="word character">White Snow Princess</span>. <span class="word name">Mikey</span> ran <span class="word adverb">quickly</span> to meet <span class="word character">White Snow Princess</span>.But <span class="word name">Mikey</span> turned out to be very <span class="word adjective">cute</span> and <span class="word name">Mikey</span> did not enjoy the meeting.</p>
+        </div>
+        <script src="madlibs.js"></script>
+    </body>
 
 
 </html>

@@ -12,13 +12,32 @@ h1{
 
 .container {
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid black;
     width: 40%;
     margin: auto;
     padding: 50px;
-    background-color: aliceblue;
+    background-color: transparent;
+}
+
+.form-container {
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .form{ 
     text-align:right;    
+}
+
+.form-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+.word {
+    color: green;
 }
